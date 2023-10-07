@@ -1,0 +1,28 @@
+/* RESPONSIVE: Estilos de los elementos de la galería */
+
+.gallery-item {
+    flex-basis: calc(25% - 20px);
+  
+    /* 4 columnas para vista de PC */
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para tablet (2 columnas) */
+  @media screen and (max-width: 768px) {
+    .gallery-item {
+      flex-basis: calc(50% - 20px);
+  
+      /* 2 columnas para tablet */
+    }
+  }
+  
+  /* Estilos para móvil (1 columna) */
+  @media screen and (max-width: 480px) {
+    .gallery-item {
+      flex-basis: calc(100% - 20px);
+  
+      /* 1 columna para móvil */
+    }
+  }
+  

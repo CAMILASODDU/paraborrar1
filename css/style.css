@@ -1,82 +1,77 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+  font-family: solid "Roboto", sans-serif;
+  font-size: 20px;
+}
 
- body {
-   
-   font-family: solid 'Roboto', sans-serif;
-   font-size: 20px;
- }
+/* header */
+.miLogo {
+  width: 100px;
+}
 
- /* header */
+.miFondo {
+  background-color: transparent;
+}
 
- .miLogo {
-   width: 100px;
- }
+/*productos*/
+.tituloProductos {
+  color: gray;
+  text-align: center;
+  font-weight: bold;
+  padding: 16px;
+}
+.tituloProductos h2 {
+  font-size: 45px;
+}
 
- .miFondo {
-   background-color: transparent
- }
+h1 {
+  font-size: 55px;
+  font-family: monospace;
+}
 
- /*productos*/
+h4 {
+  font-family: monospace;
+}
 
- .tituloProductos {
-   color: gray;
-   text-align: center;
-   font-weight: bold;
-   padding: 16px;
- }
+/* Estilos generales de la galería */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
- .tituloProductos h2 {
-   font-size: 45px;
- }
+/* RESPONSIVE: Estilos de los elementos de la galería */
+.gallery-item {
+  flex-basis: calc(25% - 20px);
+  /* 4 columnas para vista de PC */
+  margin: 10px;
+  box-sizing: border-box;
+}
 
- h1 {
-   font-size: 55px;
-   font-family: monospace
- }
+/* Estilos para tablet (2 columnas) */
+@media screen and (max-width: 768px) {
+  .gallery-item {
+    flex-basis: calc(50% - 20px);
+    /* 2 columnas para tablet */
+  }
+}
+/* Estilos para móvil (1 columna) */
+@media screen and (max-width: 480px) {
+  .gallery-item {
+    flex-basis: calc(100% - 20px);
+    /* 1 columna para móvil */
+  }
+}
+img {
+  width: 400px;
+}
 
- h4 {
-   font-family: monospace;
- }
+.youtube {
+  background-color: aqua;
+  padding: 16px;
+  justify-items: center;
+}
 
- /* Estilos generales de la galería */
- .gallery {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
- }
-
- /* RESPONSIVE: Estilos de los elementos de la galería */
- .gallery-item {
-   flex-basis: calc(25% - 20px);
-   /* 4 columnas para vista de PC */
-   margin: 10px;
-   box-sizing: border-box;
- }
-
- /* Estilos para tablet (2 columnas) */
- @media screen and (max-width: 768px) {
-   .gallery-item {
-     flex-basis: calc(50% - 20px);
-     /* 2 columnas para tablet */
-   }
- }
-
- /* Estilos para móvil (1 columna) */
- @media screen and (max-width: 480px) {
-   .gallery-item {
-     flex-basis: calc(100% - 20px);
-     /* 1 columna para móvil */
-   }
- }
-
- img {
-   width: 400px;
- }
-
- .youtube {
-   background-color: aqua;
-   padding: 16px;
-   justify-items: center;
-
- }
+/*# sourceMappingURL=style.css.map */
