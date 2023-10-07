@@ -1,0 +1,82 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+ body {
+   
+   font-family: solid 'Roboto', sans-serif;
+   font-size: 20px;
+ }
+
+ /* header */
+
+ .miLogo {
+   width: 100px;
+ }
+
+ .miFondo {
+   background-color: transparent
+ }
+
+ /*productos*/
+
+ .tituloProductos {
+   color: gray;
+   text-align: center;
+   font-weight: bold;
+   padding: 16px;
+ }
+
+ .tituloProductos h2 {
+   font-size: 45px;
+ }
+
+ h1 {
+   font-size: 55px;
+   font-family: monospace
+ }
+
+ h4 {
+   font-family: monospace;
+ }
+
+ /* Estilos generales de la galería */
+ .gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+ /* RESPONSIVE: Estilos de los elementos de la galería */
+ .gallery-item {
+   flex-basis: calc(25% - 20px);
+   /* 4 columnas para vista de PC */
+   margin: 10px;
+   box-sizing: border-box;
+ }
+
+ /* Estilos para tablet (2 columnas) */
+ @media screen and (max-width: 768px) {
+   .gallery-item {
+     flex-basis: calc(50% - 20px);
+     /* 2 columnas para tablet */
+   }
+ }
+
+ /* Estilos para móvil (1 columna) */
+ @media screen and (max-width: 480px) {
+   .gallery-item {
+     flex-basis: calc(100% - 20px);
+     /* 1 columna para móvil */
+   }
+ }
+
+ img {
+   width: 400px;
+ }
+
+ .youtube {
+   background-color: aqua;
+   padding: 16px;
+   justify-items: center;
+
+ }
