@@ -1,3 +1,13 @@
+// variables 
+$color-principal: #ccc;
+$color-letra: #575151;
+
+
+body {
+  background-color: $color-principal;
+}
+
+
 /*productos*/
 
 .tituloProductos {
@@ -8,6 +18,7 @@
   
     h2 {
       font-size: 45px;
+      color: $color-letra;
     }
   }
   
